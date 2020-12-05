@@ -1,0 +1,194 @@
+body, ul, a, li, h1, h2{
+    margin: 0;
+    padding: 0;
+    font-family: Lucida Sans;
+}
+a {
+    text-decoration: none;
+}
+/*Logo up*/
+header{
+    position: fixed;
+    padding: 5px;
+    text-align: center;
+    background: white;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+/*Logo background*/
+header h1{
+    background-image: linear-gradient(to bottom, #Ed8168, white);;
+    color:#22201B;
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+/*Little banner left side*/
+.banner h2{  
+    color: #22201B;
+}
+.banner{
+    position: auto;
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    position: absolute;
+    color: #22201B;
+    padding: 20px;
+    top: 30%;
+    left: 0;
+    background-image: linear-gradient(to bottom, #Ed8168, white);
+}
+nav
+{
+    background-color:  #f39784;
+    padding: 15px;
+    font-style: bold;
+    font-size: 20px;
+    font-family: lucida Sans;
+    color: #22201B;
+    position: sticky;
+    top: 55px;
+    left: 0;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 25%;
+    display: inline-block;
+}
+nav li a{
+    text-decoration: none;
+    color: #22201B;
+    
+}
+
+nav li a.contact{
+    color: #22201B;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    color: #22201B;
+    font-size: 2em;
+}
+article h3{
+    color: #22201B;
+    font-size: 1.65em;
+}
+article p{
+    color: #22201B;
+    font-size: 1.25em;
+}
+.images{
+    text-align: center;
+    margin: 80px 0px;
+    white-space: nowrap;
+}
+.images li{
+    
+    display: inline-block;
+    width: 30%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+.subscribe{
+    background-color: #22201B;
+    font-family: 'Lucida Sans';
+    text-align: center;
+    padding: 15px 15px;
+    color: #fff7fb;
+}
+.subscribe p{
+    font-size: 20px;
+    color: #Ed8168;
+}
+.subscribe h2{
+    font-size: 36px;
+}
+form input{
+    margin: 20px 0px;
+    padding: 10px 20px; 
+    font-size: 15px;
+    border-radius: 28px;
+    border: 5px solid #Ed8168;
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    color: #5e5b5b;
+}
+/* Pseudo Classes*/
+ nav li a:hover{
+     
+     background-color: #ffc0cb;
+     padding: 3px;
+ }
+.images li:hover{
+     position: relative;
+     
+
+ }
+ form input:focus{
+     border: 4px dashed #ff76ed;
+ }
+ form input:valid{
+     border: 4px solid rgb(85, 253, 113);
+ }
+
+ /* When the screen reach 1400px or less, use this style*/
+@media screen and (max-width: 800px){
+
+    .banner .welcome h2{
+        font-size: 20px;
+        
+    }
+    
+    nav li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    /*Place images on difrent rows*/
+    .images li{
+        width: 90%;
+        margin: 20PX auto;
+        display: block;
+    }
+}
+/*Form Contact*/
+form h2.contact{
+    
+}
+
